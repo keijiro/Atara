@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <AutoTouch>k__BackingField: 1
-  <Interval>k__BackingField: 1
+  <Interval>k__BackingField: 2
 --- !u!4 &229026663
 Transform:
   m_ObjectHideFlags: 0
