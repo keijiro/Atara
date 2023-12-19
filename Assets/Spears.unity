@@ -308,8 +308,8 @@ VisualEffect:
   m_GameObject: {fileID: 192950048}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: fa36d28c37e7c764fad134445c7ddace, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventName: NoEvent
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_AllowInstancing: 1
@@ -361,7 +361,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 229026663}
-  - component: {fileID: 229026662}
+  - component: {fileID: 229026664}
+  - component: {fileID: 229026665}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -369,20 +370,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &229026662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229026661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e7899187f0445ed978694d0179a541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <AutoTouch>k__BackingField: 1
-  <Interval>k__BackingField: 2
 --- !u!4 &229026663
 Transform:
   m_ObjectHideFlags: 0
@@ -400,6 +387,32 @@ Transform:
   - {fileID: 393083090}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229026664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229026661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8148faeac1a84b1c8f7705fbf1e6049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &229026665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229026661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e7899187f0445ed978694d0179a541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <OnDuration>k__BackingField: 1
+  <OffDuration>k__BackingField: 0.5
 --- !u!1 &250511643
 GameObject:
   m_ObjectHideFlags: 0
