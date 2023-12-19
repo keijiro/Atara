@@ -411,8 +411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e7899187f0445ed978694d0179a541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <OnDuration>k__BackingField: 1
-  <OffDuration>k__BackingField: 0.5
+  <OnDuration>k__BackingField: 0.5
+  <OffDuration>k__BackingField: 0.25
 --- !u!1 &250511643
 GameObject:
   m_ObjectHideFlags: 0
