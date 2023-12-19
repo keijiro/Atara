@@ -12,7 +12,7 @@ public sealed class TouchHandler : MonoBehaviour
 
     #region Private members
 
-    bool IsTouchOn => Input.GetKey(KeyCode.Space) || ForceTouch;
+    bool IsTouchOn => Input.GetMouseButton(0) || ForceTouch;
 
     #endregion
 
