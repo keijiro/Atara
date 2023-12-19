@@ -406,7 +406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229026661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57e7899187f0445ed978694d0179a541, type: 3}
   m_Name: 
@@ -536,8 +536,8 @@ VisualEffect:
   m_GameObject: {fileID: 393083087}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 3eda26712291e4f49af90d9ee58e8271, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventName: NoEvent
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_AllowInstancing: 1
