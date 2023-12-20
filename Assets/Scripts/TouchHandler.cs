@@ -61,9 +61,10 @@ public sealed class TouchHandler : MonoBehaviour
 
     void Update()
     {
-        foreach (var vfx in _vfxList)
-            if (vfx.HasVector2(ID_TouchPosition))
-                vfx.SetVector2(ID_TouchPosition, NormalizedMousePosition);
+        if (IsTouchOn)
+            foreach (var vfx in _vfxList)
+                if (vfx.HasVector2(ID_TouchPosition))
+                    vfx.SetVector2(ID_TouchPosition, NormalizedMousePosition);
     }
 
     #endregion
