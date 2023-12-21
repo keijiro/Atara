@@ -47,6 +47,8 @@ public sealed class TouchHandler : MonoBehaviour
                         vfx.SetVector2(idTouch, NormalizedTouchPosition);
                 yield return null;
             }
+
+            foreach (var vfx in vfxList) vfx.Stop();
         }
     }
 
