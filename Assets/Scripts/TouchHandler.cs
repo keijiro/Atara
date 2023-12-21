@@ -33,7 +33,8 @@ public sealed class TouchHandler : MonoBehaviour
         while (true)
         {
             foreach (var vfx in vfxList)
-                vfx.SetVector2(idTouch, InvalidTouchPosition);
+                if (vfx.HasVector2(idTouch))
+                    vfx.SetVector2(idTouch, InvalidTouchPosition);
 
             while (!IsTouchOn) yield return null;
 
@@ -42,7 +43,8 @@ public sealed class TouchHandler : MonoBehaviour
             while (IsTouchOn)
             {
                 foreach (var vfx in vfxList)
-                    vfx.SetVector2(idTouch, NormalizedTouchPosition);
+                    if (vfx.HasVector2(idTouch))
+                        vfx.SetVector2(idTouch, NormalizedTouchPosition);
                 yield return null;
             }
         }
