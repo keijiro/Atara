@@ -20,7 +20,8 @@ public sealed class CameraController : MonoBehaviour
       => Input.mousePosition.x / Screen.width - 0.5f;
 
     quaternion NextRandomRotation
-      => quaternion.EulerZXY(_random.NextFloat3(-1, 1) * BaseAngles);
+      => quaternion.EulerZXY
+           (_random.NextFloat3(-1, 1) * math.radians(BaseAngles));
 
     #endregion
 
@@ -39,7 +40,7 @@ public sealed class CameraController : MonoBehaviour
 
         if (Input.GetMouseButton(0))
             xformPan.localRotation =
-              Quaternion.AngleAxis(MousePosition * PanWidth, Vector3.up);
+              quaternion.RotateY(MousePosition * math.radians(PanWidth));
     }
 
     #endregion
