@@ -14,18 +14,12 @@ public sealed class TouchHandler : MonoBehaviour
 
     bool IsTouchOn => Input.GetMouseButton(0) || ForceTouch;
 
-    Vector2 NormalizedMousePosition
-      => new Vector2(Input.mousePosition.x / Screen.width,
-                     Input.mousePosition.y / Screen.height);
+    Vector2 InvalidTouchPosition
+      => new Vector2(-1, -1);
 
-    VisualEffect[] _vfxList;
-
-    #endregion
-
-    #region Predefined constants
-
-    static readonly int ID_Touch = Shader.PropertyToID("Touch");
-    static readonly int ID_TouchPosition = Shader.PropertyToID("TouchPosition");
+    Vector2 NormalizedTouchPosition
+      => new Vector2(Mathf.Clamp01(Input.mousePosition.x / Screen.width),
+                     Mathf.Clamp01(Input.mousePosition.y / Screen.height));
 
     #endregion
 
@@ -33,38 +27,25 @@ public sealed class TouchHandler : MonoBehaviour
 
     IEnumerator Start()
     {
-        _vfxList = GetComponentsInChildren<VisualEffect>();
+        var idTouch = Shader.PropertyToID("Touch");
+        var vfxList = GetComponentsInChildren<VisualEffect>();
 
         while (true)
         {
+            foreach (var vfx in vfxList)
+                vfx.SetVector2(idTouch, InvalidTouchPosition);
+
             while (!IsTouchOn) yield return null;
 
-            foreach (var vfx in _vfxList)
+            foreach (var vfx in vfxList) vfx.Play();
+
+            while (IsTouchOn)
             {
-                if (vfx.HasBool(ID_Touch)) vfx.SetBool(ID_Touch, true);
-                vfx.Play();
+                foreach (var vfx in vfxList)
+                    vfx.SetVector2(idTouch, NormalizedTouchPosition);
+                yield return null;
             }
-
-            yield return null;
-
-            while (IsTouchOn) yield return null;
-
-            foreach (var vfx in _vfxList)
-            {
-                if (vfx.HasBool(ID_Touch)) vfx.SetBool(ID_Touch, false);
-                vfx.Stop();
-            }
-
-            yield return null;
         }
-    }
-
-    void Update()
-    {
-        if (IsTouchOn)
-            foreach (var vfx in _vfxList)
-                if (vfx.HasVector2(ID_TouchPosition))
-                    vfx.SetVector2(ID_TouchPosition, NormalizedMousePosition);
     }
 
     #endregion
