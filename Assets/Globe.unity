@@ -600,7 +600,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1719227962}
   - component: {fileID: 1719227961}
-  - component: {fileID: 1719227960}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -608,20 +607,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1719227960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719227959}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e7899187f0445ed978694d0179a541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <OnDuration>k__BackingField: 1
-  <OffDuration>k__BackingField: 1
 --- !u!114 &1719227961
 MonoBehaviour:
   m_ObjectHideFlags: 0
