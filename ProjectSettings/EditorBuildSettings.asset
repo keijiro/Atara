@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Orbit.unity
+    path: Assets/Main.unity
     guid: fbaf3345570ab47088b4b721661156cb
   m_configObjects: {}
