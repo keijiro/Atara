@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 155547521}
   - component: {fileID: 155547520}
   m_Layer: 0
-  m_Name: System07
+  m_Name: Effect 07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 184862317}
   - component: {fileID: 184862316}
   m_Layer: 0
-  m_Name: System04
+  m_Name: Effect 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 467602130}
   - component: {fileID: 467602129}
   m_Layer: 0
-  m_Name: System03
+  m_Name: Effect 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 1167627142}
   - component: {fileID: 1167627141}
   m_Layer: 0
-  m_Name: System05
+  m_Name: Effect 05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 1185667048}
   - component: {fileID: 1185667047}
   m_Layer: 0
-  m_Name: System06
+  m_Name: Effect 06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 1248797959}
   - component: {fileID: 1248797958}
   m_Layer: 0
-  m_Name: System01
+  m_Name: Effect 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 1403745471}
   - component: {fileID: 1403745470}
   m_Layer: 0
-  m_Name: System02
+  m_Name: Effect 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
