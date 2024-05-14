@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 155547521}
   - component: {fileID: 155547520}
   m_Layer: 0
-  m_Name: Effect 07
+  m_Name: Effect 08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 184862317}
   - component: {fileID: 184862316}
   m_Layer: 0
-  m_Name: Effect 04
+  m_Name: Effect 05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 467602130}
   - component: {fileID: 467602129}
   m_Layer: 0
-  m_Name: Effect 03
+  m_Name: Effect 09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 1167627142}
   - component: {fileID: 1167627141}
   m_Layer: 0
-  m_Name: Effect 05
+  m_Name: Effect 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 1185667048}
   - component: {fileID: 1185667047}
   m_Layer: 0
-  m_Name: Effect 06
+  m_Name: Effect 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 1248797959}
   - component: {fileID: 1248797958}
   m_Layer: 0
-  m_Name: Effect 01
+  m_Name: Effect 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 1304455190}
   - component: {fileID: 1304455189}
   m_Layer: 0
-  m_Name: Effect 10
+  m_Name: Effect 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 1403745471}
   - component: {fileID: 1403745470}
   m_Layer: 0
-  m_Name: Effect 02
+  m_Name: Effect 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1218,7 @@ GameObject:
   - component: {fileID: 1517145056}
   - component: {fileID: 1517145055}
   m_Layer: 0
-  m_Name: Effect 09
+  m_Name: Effect 06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,16 +1409,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1248797957}
-  - {fileID: 1403745472}
-  - {fileID: 467602128}
-  - {fileID: 184862315}
-  - {fileID: 1167627140}
-  - {fileID: 1185667046}
-  - {fileID: 155547519}
-  - {fileID: 1751720174}
-  - {fileID: 1517145054}
   - {fileID: 1304455188}
+  - {fileID: 1248797957}
+  - {fileID: 1185667046}
+  - {fileID: 1167627140}
+  - {fileID: 184862315}
+  - {fileID: 1517145054}
+  - {fileID: 1751720174}
+  - {fileID: 155547519}
+  - {fileID: 467602128}
+  - {fileID: 1403745472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751720173
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 1751720176}
   - component: {fileID: 1751720175}
   m_Layer: 0
-  m_Name: Effect 08
+  m_Name: Effect 07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
