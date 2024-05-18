@@ -11,8 +11,8 @@ ScriptedImporter:
   _shape: 0
   _plane:
     Size:
-      x: 0.1
-      y: 5
+      x: 1
+      y: 1
     Subdivisions:
       x: 2
       y: 2
